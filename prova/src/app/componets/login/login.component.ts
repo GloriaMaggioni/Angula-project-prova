@@ -16,7 +16,7 @@ export class LoginComponent {
 
 
 
-   onSumbit(form: NgForm){
+   onSubmit(form: NgForm){
     const email = form.value.email;
     const password = form.value.password;
     // console.log(email, password)
