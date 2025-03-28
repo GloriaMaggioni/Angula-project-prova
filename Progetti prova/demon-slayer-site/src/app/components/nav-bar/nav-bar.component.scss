@@ -1,14 +1,26 @@
-.nav-bar {
-    width: 100%;
-    border: 1px solid red;
-    display: inline-flex;
-    flex-direction: row;
-     align-items: center;
-     justify-content: center;
 
-     button{
-        border: 1px solid blue;
-     }
-   
- }
-  
+
+
+.nav-bar{
+  border: 1px solid red;
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  .logo{
+    border: 1px solid blue;
+    width: fit-content;
+    margin-left: 10%;
+  }
+
+  .nav-bar-button{
+    border: 1px solid green;
+    width: 50%;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
