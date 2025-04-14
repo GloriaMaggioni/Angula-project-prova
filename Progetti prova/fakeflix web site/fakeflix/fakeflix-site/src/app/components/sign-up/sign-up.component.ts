@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TitlePageComponent } from '../title-page/title-page.component';
 import { FooterComponent } from "../footer/footer.component";
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -8,7 +9,7 @@ import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-sign-up',
-  imports: [TitlePageComponent, FooterComponent],
+  imports: [TitlePageComponent, FooterComponent,MatCardModule],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.scss'
 })
