@@ -1,0 +1,73 @@
+*{margin:0;padding: 0;box-sizing: border-box;color: #ffffff;}
+
+.sezione-pubblicità{
+    border: 1px solid red;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    display: inline-flex;
+    background-color: #000000 !important;
+    
+    .pubb-container{
+        border: 1px solid purple;
+        margin: 0 auto;
+        width: 80%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        .pub-icon{
+            width: 100px;
+            height: 100%;
+
+            img{
+                width: 80px;
+                height: 100%;   
+            }
+        }
+
+        .pub-contents{
+            border: 1px solid darkorange;
+            width: 90%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+
+
+            .pub-text{
+                //border: 1px solid green;
+                margin-left: 30px;
+                .main-text{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .sub-text{
+                    font-size: 16px;
+                }
+            }
+            .pub-btn-section{
+                //border: 1px solid yellow;
+                width: fit-content;
+                height: 50px;
+                display: inline-flex;
+                align-items: center;
+           
+        
+                .pub-button{
+                    background-color: grey;
+                    width: 140px;
+                    height: 40px;
+                    margin-right: 30px;
+                    border-radius: 5px;
+                    border: none;
+                    font-size: 16px;
+                }
+            }
+        }
+        .pub-icon, .pub-text{
+            margin-bottom:3px;
+            width: fit-content;
+        }
+    }
+ 
+}

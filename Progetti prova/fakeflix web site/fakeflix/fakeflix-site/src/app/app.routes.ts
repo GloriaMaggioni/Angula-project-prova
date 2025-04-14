@@ -12,5 +12,5 @@ export const routes: Routes = [
     {path: 'title-page', component: TitlePageComponent},
     {path: 'sign-up', component: SignUpComponent},
     {path: 'nav-bar', component: NavBarComponent},
-    {path: '', redirectTo: 'title-page', pathMatch: 'full' }
+    {path: '', redirectTo: 'sign-up', pathMatch: 'full' }
 ];
