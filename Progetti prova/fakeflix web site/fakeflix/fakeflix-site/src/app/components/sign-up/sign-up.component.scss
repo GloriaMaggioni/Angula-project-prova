@@ -51,8 +51,6 @@
                 height: 50px;
                 display: inline-flex;
                 align-items: center;
-           
-        
                 .pub-button{
                     background-color: grey;
                     width: 140px;
@@ -92,17 +90,18 @@
         .titoliDelMomento-contents{
             border: 1px solid red;
             width: 100%;
-            height: fit-content;
+            height: 280px;
+            max-width: 100%;
             display: inline-flex;
-            flex-wrap: wrap;
+             overflow:hidden;
+             position: relative;
             .card{
                 //border:1px solid violet;
                 width: fit-content;
                 height: fit-content;
                 display: inline-flex;
-                
-               
                 margin: 10px;
+
                 .card-number{
                     //border: 1px solid cornflowerblue;
                     width: fit-content;
@@ -112,11 +111,10 @@
                     position: absolute;
                     top: 61%;
                     left: -20px;
-                    font-family: "Rubik Distressed", system-ui;
+                    font-family: "Rubik Distressed", sans-serif;
                     font-weight: 400;
                     font-style: normal;
                     text-shadow: #000000 4px 0 8px;
-
                 }
                 .card-img{
                     //border: 1px solid darkgreen;
@@ -134,9 +132,45 @@
                 }
                   
             }
+            .titoliDelMoment-btn{
+                border: 1px solid green;
+                width:100%;
+                height: 100%;
+                position:absolute;
+                top:0;
+                left: 0;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .btn-left-container, .btn-right-container{
+                    //border: 1px solid white;
+                    width: 34px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    background-color: #000000;
+                    // transition: transform 400ms ease-in-out;
+                    .btn-left, .btn-right{
+                        width: 24px;
+                        height: 120px;
+                        font-size: 20px;
+                        border-radius: 5px;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        color: rgba(255, 255, 255, 0.7);
+                        //background-color: red;
+                        // transition: opacity 400ms ease-in-out;
+                        // transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                        margin-left: 4px;
+                    }
+                }
+                
+               
+            }
             
         }
     }
 
     
 }
+
