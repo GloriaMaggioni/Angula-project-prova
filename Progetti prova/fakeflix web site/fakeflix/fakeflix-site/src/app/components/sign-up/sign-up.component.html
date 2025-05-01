@@ -3,154 +3,157 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=desktop_windows" />
 <app-title-page></app-title-page>
+<div class="content-page">
+    <!-- INIZIO SEZIONE PUBBLICITA -->
+
+   <section class="sezione-pubblicità">
+    <div class="pubb-container">
+       <div class="pub-icon">
+           <img src="assets/images/popcorn.png" alt="">
+       </div>
+       <div class="pub-contents">
+           <div class="pub-text">
+               <p class="main-text">Tutto ciò che ami su Fakeflix a soli 9,99 euro.</p> 
+               <p class="sub-text">Approfitta del nostro piano base con pubblicità: è la più conveniente.</p>
+           </div>
+           <div class="pub-btn-section">
+               <button class="pub-button">Scopri di più</button>
+           </div>
+       </div>
+      
+     </div> 
+  </section>
 
 <!-- INIZIO SEZIONE PUBBLICITA -->
 
-   <section class="sezione-pubblicità">
-     <div class="pubb-container">
-        <div class="pub-icon">
-            <img src="assets/images/popcorn.png" alt="">
-        </div>
-        <div class="pub-contents">
-            <div class="pub-text">
-                <p class="main-text">Tutto ciò che ami su Fakeflix a soli 9,99 euro.</p> 
-                <p class="sub-text">Approfitta del nostro piano base con pubblicità: è la più conveniente.</p>
-            </div>
-            <div class="pub-btn-section">
-                <button class="pub-button">Scopri di più</button>
-            </div>
-        </div>
-       
-      </div> 
-   </section>
+<!-- INIZIO SEZIONE TITOLI DEL MOMENTO -->
 
- <!-- INIZIO SEZIONE PUBBLICITA -->
+<section class="titoliDelMomento">
+   <div class="titoliDelMomento-container">
+       <h2 class="titoliDelMomento-title">I titoli del momento</h2>
+       <div class="titoliDelMomento-contents">
+           <div class="titoliDelMoment-btn">
+               <div class="btn-left-container">             
+                   <button class="btn-left"(click)='btnLeft()'>&lt;</button>
+               </div>
+               <div class="btn-right-container">
+                   <button class="btn-right">&gt;</button>
+               </div>
+           </div>
 
- <!-- INIZIO SEZIONE TITOLI DEL MOMENTO -->
-
- <section class="titoliDelMomento">
-    <div class="titoliDelMomento-container">
-        <h2 class="titoliDelMomento-title">I titoli del momento</h2>
-        <div class="titoliDelMomento-contents">
-            <div class="titoliDelMoment-btn">
-                <div class="btn-left-container">             
-                    <button class="btn-left"(click)='btnLeft()'>&lt;</button>
-                </div>
-                <div class="btn-right-container">
-                    <button class="btn-right">&gt;</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">1</p>
-                    <img src="assets/images/adolescence.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">2</p>
-                    <img src="assets/images/il-ragazzo-dai-pantaloni-rosa.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">3</p>
-                    <img src="assets/images/il-gattopardo.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">4</p>
-                    <img src="assets/images/squid-game.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">5</p>
-                    <img src="assets/images/enola-holmes.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">6</p>
-                    <img src="assets/images/pulse.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">7</p>
-                    <img src="assets/images/the-rookie.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">8</p>
-                    <img src="assets/images/la-lista-dei-miei-desideri.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">9</p>
-                    <img src="assets/images/the-electric-state.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <p class="card-number">10</p>
-                    <img src="assets/images/banger.jpg" alt="">
-                </div>
-            </div>   
-        </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">1</p>
+                   <img src="assets/images/adolescence.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">2</p>
+                   <img src="assets/images/il-ragazzo-dai-pantaloni-rosa.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">3</p>
+                   <img src="assets/images/il-gattopardo.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">4</p>
+                   <img src="assets/images/squid-game.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">5</p>
+                   <img src="assets/images/enola-holmes.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">6</p>
+                   <img src="assets/images/pulse.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">7</p>
+                   <img src="assets/images/the-rookie.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">8</p>
+                   <img src="assets/images/la-lista-dei-miei-desideri.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">9</p>
+                   <img src="assets/images/the-electric-state.jpg" alt="">
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-img">
+                   <p class="card-number">10</p>
+                   <img src="assets/images/banger.jpg" alt="">
+               </div>
+           </div>   
+       </div>
+          
            
-            
-    </div>
- </section>
-  <!-- FINE SEZIONE TITOLI DEL MOMENTO -->
+   </div>
+</section>
+ <!-- FINE SEZIONE TITOLI DEL MOMENTO -->
 
-  <!-- INIZIO SEZIONE MORE REASONS TO JOIN -->
-   <section class="moreReasonsToJoin">
-    <div class="moreReaonsToJoin-container">
-        <h2 class="moreReasonsToJoin-title">Motivi in più per abbonarsi</h2>
-        <div class="moreReasonsToJoin-content">
-            <div class="morereasonsToJoin-card">
-                <h3 class="card-title">Goditi Fakeflix sulla tua TV</h3>
-                <p class="card-text">Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</p>
-                <div class="card-icon-1">
-                    <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M334-120v-60h86v-100H140q-24 0-42-18t-18-42v-440q0-24 18-42t42-18h680q24 0 42 18t18 42v440q0 24-18 42t-42 18H540v100h86v60H334ZM140-340h680v-440H140v440Zm0 0v-440 440Z"/></svg>            
-                </div>
-            </div>
-            <div class="morereasonsToJoin-card">
-                <h3 class="card-title">Scarica le tue serie da guardare offline</h3>
-                <p class="card-text">Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</p>
-                <div class="card-icon-2">
-                    <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"  fill="#e3e3e3"><path d="m480-332 146-146-42-42-74 74v-182h-60v182l-74-74-42 42 146 146Zm0 252q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"/></svg>            
-                </div>
-            </div>
-            <div class="morereasonsToJoin-card">
-                <h3 class="card-title">Guarda Fakeflix ovunque</h3>
-                <p class="card-text">Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.</p>
-                <div class="card-icon-3">
-                    <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M80-160v-90h80v-490q0-24.75 17.63-42.38Q195.25-800 220-800h620v60H220v490h240v90H80Zm470 0q-12.75 0-21.37-8.63Q520-177.25 520-190v-460q0-12.75 8.63-21.38Q537.25-680 550-680h300q12.75 0 21.38 8.62Q880-662.75 880-650v460q0 12.75-8.62 21.37Q862.75-160 850-160H550Zm30-90h240v-370H580v370Zm0 0h240-240Z"/></svg>            
-                </div>
-                </div>
-            <div class="morereasonsToJoin-card card-4">
-                <h3 class="card-title">Crea profili per i bambini</h3>
-                <p class="card-text">I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
-                <div class="card-icon-4">
-                    <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M222-255q63-44 125-67.5T480-346q71 0 133.5 23.5T739-255q44-54 62.5-109T820-480q0-145-97.5-242.5T480-820q-145 0-242.5 97.5T140-480q0 61 19 116t63 109Zm257.81-195q-57.81 0-97.31-39.69-39.5-39.68-39.5-97.5 0-57.81 39.69-97.31 39.68-39.5 97.5-39.5 57.81 0 97.31 39.69 39.5 39.68 39.5 97.5 0 57.81-39.69 97.31-39.68 39.5-97.5 39.5Zm.66 370Q398-80 325-111.5t-127.5-86q-54.5-54.5-86-127.27Q80-397.53 80-480.27 80-563 111.5-635.5q31.5-72.5 86-127t127.27-86q72.76-31.5 155.5-31.5 82.73 0 155.23 31.5 72.5 31.5 127 86t86 127.03q31.5 72.53 31.5 155T848.5-325q-31.5 73-86 127.5t-127.03 86Q562.94-80 480.47-80Zm-.47-60q55 0 107.5-16T691-212q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480-140Zm0-370q34 0 55.5-21.5T557-587q0-34-21.5-55.5T480-664q-34 0-55.5 21.5T403-587q0 34 21.5 55.5T480-510Zm0-77Zm0 374Z"/></svg>
+ <!-- INIZIO SEZIONE MORE REASONS TO JOIN -->
+  <section class="moreReasonsToJoin">
+   <div class="moreReaonsToJoin-container">
+       <h2 class="moreReasonsToJoin-title">Motivi in più per abbonarsi</h2>
+       <div class="moreReasonsToJoin-content">
+           <div class="morereasonsToJoin-card">
+               <h3 class="card-title">Goditi Fakeflix sulla tua TV</h3>
+               <p class="card-text">Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</p>
+               <div class="card-icon-1">
+                   <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M334-120v-60h86v-100H140q-24 0-42-18t-18-42v-440q0-24 18-42t42-18h680q24 0 42 18t18 42v440q0 24-18 42t-42 18H540v100h86v60H334ZM140-340h680v-440H140v440Zm0 0v-440 440Z"/></svg>            
+               </div>
+           </div>
+           <div class="morereasonsToJoin-card">
+               <h3 class="card-title">Scarica le tue serie da guardare offline</h3>
+               <p class="card-text">Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</p>
+               <div class="card-icon-2">
+                   <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"  fill="#e3e3e3"><path d="m480-332 146-146-42-42-74 74v-182h-60v182l-74-74-42 42 146 146Zm0 252q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"/></svg>            
+               </div>
+           </div>
+           <div class="morereasonsToJoin-card">
+               <h3 class="card-title">Guarda Fakeflix ovunque</h3>
+               <p class="card-text">Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.</p>
+               <div class="card-icon-3">
+                   <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M80-160v-90h80v-490q0-24.75 17.63-42.38Q195.25-800 220-800h620v60H220v490h240v90H80Zm470 0q-12.75 0-21.37-8.63Q520-177.25 520-190v-460q0-12.75 8.63-21.38Q537.25-680 550-680h300q12.75 0 21.38 8.62Q880-662.75 880-650v460q0 12.75-8.62 21.37Q862.75-160 850-160H550Zm30-90h240v-370H580v370Zm0 0h240-240Z"/></svg>            
+               </div>
+               </div>
+           <div class="morereasonsToJoin-card card-4">
+               <h3 class="card-title">Crea profili per i bambini</h3>
+               <p class="card-text">I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
+               <div class="card-icon-4">
+                   <svg  xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M222-255q63-44 125-67.5T480-346q71 0 133.5 23.5T739-255q44-54 62.5-109T820-480q0-145-97.5-242.5T480-820q-145 0-242.5 97.5T140-480q0 61 19 116t63 109Zm257.81-195q-57.81 0-97.31-39.69-39.5-39.68-39.5-97.5 0-57.81 39.69-97.31 39.68-39.5 97.5-39.5 57.81 0 97.31 39.69 39.5 39.68 39.5 97.5 0 57.81-39.69 97.31-39.68 39.5-97.5 39.5Zm.66 370Q398-80 325-111.5t-127.5-86q-54.5-54.5-86-127.27Q80-397.53 80-480.27 80-563 111.5-635.5q31.5-72.5 86-127t127.27-86q72.76-31.5 155.5-31.5 82.73 0 155.23 31.5 72.5 31.5 127 86t86 127.03q31.5 72.53 31.5 155T848.5-325q-31.5 73-86 127.5t-127.03 86Q562.94-80 480.47-80Zm-.47-60q55 0 107.5-16T691-212q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480-140Zm0-370q34 0 55.5-21.5T557-587q0-34-21.5-55.5T480-664q-34 0-55.5 21.5T403-587q0 34 21.5 55.5T480-510Zm0-77Zm0 374Z"/></svg>
 
-                </div>
-            </div>
-        </div>
-    </div>
-      
-   </section>
-  <!-- FINE SEZIONE MORE REASONS TO JOIN -->
+               </div>
+           </div>
+       </div>
+   </div>
+     
+  </section>
+ <!-- FINE SEZIONE MORE REASONS TO JOIN -->
 
-  <!-- INIZIO SEZIONE DOMANDE -->
-   <!-- FINE SEZIONE DOMANDE -->
+ <!-- INIZIO SEZIONE DOMANDE -->
+  <!-- FINE SEZIONE DOMANDE -->
 
-   <!-- INPUT EMAIL -->
+  <!-- INPUT EMAIL -->
+
+
+</div>
 
    <app-footer></app-footer>
