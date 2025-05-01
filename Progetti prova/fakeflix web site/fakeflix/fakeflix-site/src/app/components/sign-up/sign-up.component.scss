@@ -1,4 +1,5 @@
-*{margin:0;padding: 0;box-sizing: border-box;color: #ffffff;}
+*{margin:0;padding: 0;box-sizing: border-box;color: #ffffff; //background-color:#000000;
+    }
 
 .sezione-pubblicità{
     //border: 1px solid red;
@@ -171,6 +172,64 @@
         }
     }
 
-    
+    // DA AGGIUNGERE LE ANIMAZIONI E SISTEMARE LO STILE DEI BOTTONI
+}
+
+
+
+//SEZIONE MORE REASONS TO JOIN
+.moreReasonsToJoin{
+   // border: 1px solid blue;
+    width: 100%;
+    margin-top: 45px;
+    .moreReaonsToJoin-container{
+        //border: 1px solid red;
+        width: 80%;
+        margin: 0 auto;
+        .moreReasonsToJoin-content{
+            //border: 1px solid green;
+            width: 100%;
+            margin-top: 10px;
+            display: inline-flex;
+            justify-content: space-evenly;           
+            .morereasonsToJoin-card{
+                //border: 1px solid orange;
+                width: calc(100% / 4 );
+                height: 351px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                margin: 5px 15px 0 0;
+                padding: 24px 16px 128px;
+                border-radius: 5%;
+                background: linear-gradient(to bottom right, #02024fdf 19%, #350142 100%, #00000080, #00000080);  
+                h3{
+                font-size: 24px;
+                }
+                p{
+                    font-size: 16px;
+                    margin-top: 15px;
+                    color: #9a9999;
+                }
+                .card-icon-1{
+                    margin-top: 41%;
+                }
+                .card-icon-2{
+                    margin-top: 54%;
+                }
+                .card-icon-3{
+                    margin-top: 58%;
+                }
+            }
+            .card-4{
+               margin-right: 0;
+               .card-icon-4{
+                margin-top: 51%;
+            }
+              
+            }
+        }
+    }
 }
 
