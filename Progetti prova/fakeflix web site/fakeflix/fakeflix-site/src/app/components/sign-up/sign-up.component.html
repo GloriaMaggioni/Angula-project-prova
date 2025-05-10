@@ -2,7 +2,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=desktop_windows" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add" />
+
 <app-title-page></app-title-page>
+
 <div class="content-page">
     <!-- INIZIO SEZIONE PUBBLICITA -->
 
@@ -149,6 +152,22 @@
  <!-- FINE SEZIONE MORE REASONS TO JOIN -->
 
  <!-- INIZIO SEZIONE DOMANDE -->
+  <section class="questions-section">
+    <div class="questions-container" >
+        <h2>Domande frequenti</h2>
+        <div class="q1" *ngFor="let item of questions; let i = index" >
+            <button class="questionBtn" (click)="showAnswer(i)">
+              <p class="btn-text">{{item.question}}</p>
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg>
+           </button>
+           <div class="answer-container" *ngIf="activeIndex === i">
+               {{item.answer}}
+           </div>
+        </div>
+     </div>
+      
+
+  </section>
   <!-- FINE SEZIONE DOMANDE -->
 
   <!-- INPUT EMAIL -->
