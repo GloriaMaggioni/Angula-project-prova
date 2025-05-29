@@ -1,47 +1,45 @@
-import { Component, HostListener, ViewChild } from '@angular/core';
+import { asNativeElements, Component, HostListener, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { TitlePageComponent } from '../title-page/title-page.component';
 import { FooterComponent } from "../footer/footer.component";
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { NgFor, NgIf } from '@angular/common';
 import { ElementRef } from '@angular/core';
-
-
-
-
-
+import{trigger,  state,animate, transition} from '@angular/animations'
 
 
 @Component({
   selector: 'app-sign-up',
   imports: [TitlePageComponent, FooterComponent,MatCardModule, MatButtonModule, NgIf, NgFor],
   templateUrl: './sign-up.component.html',
-  styleUrl: './sign-up.component.scss'
+  styleUrl: './sign-up.component.scss',
+   animations: [
+   
+  ]
+ 
 })
 export class SignUpComponent {
+
  constructor(){}
+
+
   //FUNZIONE DI SCORRIMENTO DELLE IMMAGINI
-   @ViewChild("move" ) move!: ElementRef<HTMLDivElement>
+   @ViewChild("move" ) move!: ElementRef
    @ViewChild('btn-left') btnLeft!: ElementRef
-     @ViewChild('btn-right') btnRight!: ElementRef
+   @ViewChild('btn-right') btnRight!: ElementRef;  
    
      ngAfterViewInit(){}
 
-      
       scrollLeft(){
-          this.move.nativeElement.scrollBy({left: 800, behavior: 'smooth'});
-          this.btnLeft.nativeElement.style.position = 'fixed';
-          this.btnRight.nativeElement.style.display = 'none';
+        if(this.move?.nativeElement){
+           this.move.nativeElement.scrollBy({left: 800, behavior: 'smooth'});
+        }
+      };
 
-          console.log()
-      }
       scrollRight(){
         this.move.nativeElement.scrollBy({left: -800, behavior: 'smooth'});
-        this.btnRight.nativeElement.style.display = 'fixed';
-
-      }
+       }
      
-
 
 
  
@@ -63,3 +61,7 @@ export class SignUpComponent {
 
 
 }
+function style(arg0: { opacity: number; }) {
+  throw new Error('Function not implemented.');
+}
+
