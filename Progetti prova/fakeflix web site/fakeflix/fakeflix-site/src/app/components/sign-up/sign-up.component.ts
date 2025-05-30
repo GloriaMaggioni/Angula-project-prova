@@ -32,12 +32,12 @@ export class SignUpComponent {
 
       scrollLeft(){
         if(this.move?.nativeElement){
-           this.move.nativeElement.scrollBy({left: 800, behavior: 'smooth'});
+           this.move.nativeElement.scrollBy({left: 1030, behavior: 'smooth'});
         }
       };
 
       scrollRight(){
-        this.move.nativeElement.scrollBy({left: -800, behavior: 'smooth'});
+        this.move.nativeElement.scrollBy({left: -1030, behavior: 'smooth'});
        }
      
 
@@ -58,10 +58,6 @@ export class SignUpComponent {
   showAnswer(index :number){
     this.activeIndex = this.activeIndex === index ? null : index;
   }
-
-
 }
-function style(arg0: { opacity: number; }) {
-  throw new Error('Function not implemented.');
-}
+
 
