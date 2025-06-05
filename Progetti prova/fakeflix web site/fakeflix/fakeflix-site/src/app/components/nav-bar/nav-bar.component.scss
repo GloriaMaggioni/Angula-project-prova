@@ -7,16 +7,12 @@
 
 
 .nav-bar{
-   // border: 1px solid blue;
     width: 100%;
     margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-
     .nav-bar-logo{
-        //border: 1px solid red;
         width:10% ;
         margin-left: 9%;
         img {
@@ -25,16 +21,12 @@
         }
     }
     .lang-signIn{
-    //    border: 1px solid violet;
        height: 32px;
        margin-right: 0;
        display: inline-flex;
        margin-right: 10%;
-   
    }
-   
    .lang-select{
-       // border: 1px solid green;
        width: 105px;
        font-size: 16px;
        text-align: center;
@@ -47,10 +39,12 @@
        width: 70px;
        border-radius: 4px;
        font-size: 14px;
-    //    font-family: sans-serif;
        font-weight: bold;
         color: #ffffff;
         background-color:rgb(229, 9, 20);
         border: none;
+   }
+   .accedi-btn:hover{
+    transform: scale(1.1);
    }
 }
