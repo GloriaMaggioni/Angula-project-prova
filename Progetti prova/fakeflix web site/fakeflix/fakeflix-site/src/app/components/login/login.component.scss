@@ -36,14 +36,62 @@
        cursor: pointer;
     }
     .form{
-        border: 1px solid green;
-        width: 300px;
+        //border: 1px solid green;
+        width: 30%;
+        height: 75%;
         position: absolute;
         top: 50%;
         left:50%;
         transform: translate(-50%, -50%);
-        .email-input{
-            border-color: red ;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 7px;
+        .form-contents{
+           // border: 1px solid blue;
+            width: 80%;
+            margin: 20px auto;
+            .form-title{
+               // border: 1px solid red;
+                font-size: 40px;
+            }
+            .email-input{
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+           .email-input, .password-input{
+                width: 100%;
+                height: 47px ;
+                color: blue;
+                font-size: 15px;  
+            }
+            .form-letter{
+                text-align: center;
+                margin-top: 10px;
+            }
+            button{
+              color: #000000;
+            }
+            .form-btn{
+                background-color: #ff0000;
+            }
+            .form-registerBtn{
+                background-color: rgba(221, 221, 221, 0.5);
+            }
+            .form-btn, .form-registerBtn{
+                 width: 100%;
+                 height: 37px;
+                margin-top: 10px;
+                font-size: 16px;
+                border-radius: 5px;
+                box-shadow: none;
+                border: none;
+                color: #ffffff;
+            }
+            .form-checkbox{
+                //border:1px solid violet;
+                margin-top: 7px;
+            }
         }
+       
     }
 }

@@ -5,8 +5,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { NgFor, NgIf } from '@angular/common';
 import { ElementRef } from '@angular/core';
-import{trigger,  state,animate, transition} from '@angular/animations'
-
 
 @Component({
   selector: 'app-sign-up',

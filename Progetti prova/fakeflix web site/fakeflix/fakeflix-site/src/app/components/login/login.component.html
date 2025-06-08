@@ -5,30 +5,19 @@
      <!-- FORM -->
 
      <div class="form">
-        
-     <form class="example-form">
-  <mat-form-field class="email-input">
-    <mat-label>Email</mat-label>
-    <input type="email" matInput [formControl]="emailFormControl" placeholder="Email">
-    <mat-hint></mat-hint>
-    @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
-      <mat-error>Please enter a valid email address</mat-error>
-    }
-  </mat-form-field>
-
-  <mat-form-field class="password-input">
-    <mat-label>Enter your password</mat-label>
-    <input matInput [type]="hide() ? 'password' : 'text'" />
-    <button
-      matIconButton
-      matSuffix
-      (click)="clickEvent($event)"
-      [attr.aria-label]="'Hide password'"
-      [attr.aria-pressed]="hide()"
-    >
-    </button>
-  </mat-form-field>
-</form>
+        <div class="form-contents">
+            <h2 class="form-title">Welcome</h2>
+            <input type="email"  name="email" class="email-input"  placeholder="Email">
+            <input type="password" name="password" class="password-input" placeholder="Passord" required>
+            <button type="submit" class="form-btn">Accedi</button>
+            <p class="form-letter">OPPURE</p>
+            <button type="submit" class="form-registerBtn">Registrati</button>
+            <div class="form-checkbox">
+                 <input type="checkbox" class="form-checkbox">
+                 <label for="ricordami">Ricordami</label>
+            </div>
+        </div>
+    
 
      </div>
     
