@@ -11,45 +11,31 @@ import { error } from 'node:console';
 
 @Component({
   selector: 'app-login',
-  imports: [RouterModule, MatInputModule,  FormsModule, ReactiveFormsModule, MatFormFieldModule, MatIconModule,NgStyle ],
+  imports: [RouterModule, MatInputModule,  FormsModule, ReactiveFormsModule, MatFormFieldModule, MatIconModule,NgStyle, NgIf ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 
 })
 export class LoginComponent {
-  @ViewChild('email') emailInput! : ElementRef <HTMLInputElement>
-  @ViewChild('password') passwordInput! : ElementRef <HTMLInputElement>
-  constructor(private route: Router, public renderer : Renderer2){}
+
+  constructor(private route: Router){}
 
 
-  
   myForm: FormGroup = new FormGroup ({
     email : new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(8)])
   })
- 
-  errorStyle(){
-    const email = this.emailInput.nativeElement;
-    const password = this.passwordInput.nativeElement;
-    
-    if(this.myForm.invalid && this.myForm.touched){
-      this.renderer.setStyle(email, 'border', '1px solid red')
-       this.renderer.setStyle(password, 'border', '1px solid red')
-    }else{
-       this.renderer.setStyle(email, 'border', '1px solid gray')
-       this.renderer.setStyle(password, 'border', '1px solid gray')
 
+
+  onSubmit(){
+    if(this.myForm.valid){
+      console.log('Funziona', this.myForm.value)
+    }else{
+      console.log('Non funziona', this.myForm.value)
     }
   }
 
-
-
-
-
-
-
-
-
+  
 
   goToSignUpPage(){
      this.route.navigate(['sign-up'])

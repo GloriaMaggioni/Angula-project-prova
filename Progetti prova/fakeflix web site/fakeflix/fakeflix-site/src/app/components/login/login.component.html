@@ -1,40 +1,35 @@
 
 <div class="login-page">
-    <div class="nav-bar-logo"><img src="assets/images/fakeflix-logo.png" alt="" > 
+    <div class="nav-bar-logo"><img src="assets/images/fakeflix-logo.png" alt=""  > 
       </div>
     
      <!-- FORM -->
 
-       <div class="form"  [formGroup]="myForm">
+       <div class="form"  [formGroup]="myForm" (ngSubmit)="onSubmit()">
         <div class="form-contents">
             <h2 class="form-title">Welcome</h2>
 
-            <input #emailInput type="email"   name="email" class="email-input"  placeholder="Email"  formControlName="email" [ngStyle]="errorStyle">
-            <div class="text-danger">
-              @if(myForm.controls['email'].errors?.['required'] && myForm.controls['email'].touched) {
-                 <span>Questa è obbligatoria </span>
-                 
-              }
+            <input type="email"   class="email-input"  placeholder="Email"  formControlName="email"  
+                [ngStyle]="myForm.get('email')?.invalid && myForm.get('email')?.touched ? {'border': '1px solid red'} : {'border': '1px solid gray'}">
+            <div class="email-control">
+               <div *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched">
+                  <span *ngIf="myForm.get('email')?.errors?.['required']">Inserisci una email valida</span>
+               </div> 
             </div>
-             
-              
-              <input #passwordInput type="password" name="password" class="password-input" placeholder="Password" formControlName="password" [ngStyle]="errorStyle">
-              <div class="controlGroup">
-                @if(myForm.controls['password'].touched){
-                  <div class="text-danger">
-                    @if(myForm.controls['password'].errors?.['required']){
-                       <span>Questa è obbligatoria </span>
-
-                    }
-                    @if(myForm.controls['password'].errors?.['minLength']){
-                       <span>Min 8 caratteri </span>
-
-                    }
-                  </div>
-                }
-              </div>
            
-            <button type="submit" class="form-btn">Accedi</button>
+              
+              <input  type="password" class="password-input" placeholder="Password" formControlName="password" 
+                [ngStyle]="myForm.get('password')?.invalid && myForm.get('password')?.touched ? {'border': '1px solid red'} : {'border': '1px solid gray'}">
+               <div class="password-control">
+               <div *ngIf="myForm.get('password')?.invalid && myForm.get('password')?.touched ">
+                  <span *ngIf="myForm.get('password')?.errors?.['required']">Inserisci una password </span>
+                  <span *ngIf="myForm.get('password')?.errors?.['minlength']">Min 8 caratteri</span>
+               </div> 
+            </div>
+           
+             
+           
+            <button type="submit" class="form-btn" >Accedi</button>
             <p class="form-letter">OPPURE</p>
             <button type="submit" class="form-registerBtn" (click)="backToSignUpPage()">Registrati
             </button>
