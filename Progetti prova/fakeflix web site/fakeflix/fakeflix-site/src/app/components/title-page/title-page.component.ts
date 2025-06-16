@@ -11,6 +11,9 @@ import { Router, RouterLink,RouterModule } from '@angular/router';
   styleUrl: './title-page.component.scss'
 })
 export class TitlePageComponent {
-  
+  constructor(private route: Router){}
 
+ goToHomePage(){
+  this.route.navigate(['home-page'])
+ }
 }

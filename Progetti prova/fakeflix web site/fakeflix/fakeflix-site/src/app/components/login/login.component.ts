@@ -45,7 +45,9 @@ export class LoginComponent {
      this.route.navigate(['sign-up'])
    }
 
-
+  goToHomePage(){
+  this.route.navigate(['home-page'])
+ }
 
   
 }

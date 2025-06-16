@@ -1,14 +1,12 @@
 
 <div class="login-page">
-    <div class="nav-bar-logo"><img src="assets/images/fakeflix-logo.png" alt=""  > 
-      </div>
-    
-     <!-- FORM -->
-
+    <div class="nav-bar-logo"><img src="assets/images/fakeflix-logo.png" alt=""  (click)="goToSignUpPage()"> 
+    </div>
        <div class="form"  [formGroup]="myForm" (ngSubmit)="onSubmit()">
         <div class="form-contents">
             <h2 class="form-title">Welcome</h2>
 
+          <!-- EMAIL INPUT -->
             <input type="email"   class="email-input"  placeholder="Email"  formControlName="email"  
                 [ngStyle]="myForm.get('email')?.invalid && myForm.get('email')?.touched ? {'border': '1px solid red'} : {'border': '1px solid gray'}">
             <div class="email-control">
@@ -16,9 +14,9 @@
                   <span *ngIf="myForm.get('email')?.errors?.['required']">Inserisci una email valida</span>
                </div> 
             </div>
-           
-              
-              <input  type="password" class="password-input" placeholder="Password" formControlName="password" 
+
+            <!-- PASSWORD INPUT -->
+             <input  type="password" class="password-input" placeholder="Password" formControlName="password" 
                 [ngStyle]="myForm.get('password')?.invalid && myForm.get('password')?.touched ? {'border': '1px solid red'} : {'border': '1px solid gray'}">
                <div class="password-control">
                <div *ngIf="myForm.get('password')?.invalid && myForm.get('password')?.touched ">
@@ -29,7 +27,7 @@
            
              
            
-            <button type="submit" class="form-btn" >Accedi</button>
+            <button type="submit" class="form-btn" (click)="goToHomePage()">Accedi</button>
             <p class="form-letter">OPPURE</p>
             <button type="submit" class="form-registerBtn" (click)="backToSignUpPage()">Registrati
             </button>
