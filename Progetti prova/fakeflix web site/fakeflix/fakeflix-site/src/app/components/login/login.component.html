@@ -22,7 +22,7 @@
                 [ngStyle]="myForm.get('password')?.invalid && myForm.get('password')?.touched ? {'border': '1px solid red'} : {'border': '1px solid gray'}">
                <div class="password-control">
                <div *ngIf="myForm.get('password')?.invalid && myForm.get('password')?.touched ">
-                  <span *ngIf="myForm.get('password')?.errors?.['required']">Inserisci una password </span>
+                  <span *ngIf="myForm.get('password')?.errors?.['required']">Inserisci una password valida</span>
                   <span *ngIf="myForm.get('password')?.errors?.['minlength']">Min 8 caratteri</span>
                </div> 
             </div>
