@@ -1,25 +1,59 @@
+
 <div class="login-page">
-    <div class="nav-bar-logo"><img src="assets/images/fakeflix-logo.png" alt="" (click)="goToSignUpPage()">
-     </div>
+    <div class="nav-bar-logo"><img src="assets/images/fakeflix-logo.png" alt="" > 
+      </div>
     
      <!-- FORM -->
 
-     <div class="form">
+       <div class="form"  [formGroup]="myForm">
         <div class="form-contents">
             <h2 class="form-title">Welcome</h2>
-            <input type="email"  name="email" class="email-input"  placeholder="Email">
-            <input type="password" name="password" class="password-input" placeholder="Passord" required>
+
+            <input #emailInput type="email"   name="email" class="email-input"  placeholder="Email"  formControlName="email" [ngStyle]="errorStyle">
+            <div class="text-danger">
+              @if(myForm.controls['email'].errors?.['required'] && myForm.controls['email'].touched) {
+                 <span>Questa è obbligatoria </span>
+                 
+              }
+            </div>
+             
+              
+              <input #passwordInput type="password" name="password" class="password-input" placeholder="Password" formControlName="password" [ngStyle]="errorStyle">
+              <div class="controlGroup">
+                @if(myForm.controls['password'].touched){
+                  <div class="text-danger">
+                    @if(myForm.controls['password'].errors?.['required']){
+                       <span>Questa è obbligatoria </span>
+
+                    }
+                    @if(myForm.controls['password'].errors?.['minLength']){
+                       <span>Min 8 caratteri </span>
+
+                    }
+                  </div>
+                }
+              </div>
+           
             <button type="submit" class="form-btn">Accedi</button>
             <p class="form-letter">OPPURE</p>
-            <button type="submit" class="form-registerBtn">Registrati</button>
+            <button type="submit" class="form-registerBtn" (click)="backToSignUpPage()">Registrati
+            </button>
             <div class="form-checkbox">
                  <input type="checkbox" class="form-checkbox">
-                 <label for="ricordami">Ricordami</label>
+                 <label for="ricordami" class="form-checkbox-label">Ricordami</label>
             </div>
-        </div>
-    
-
+        </div> 
      </div>
+
+
+
+
+
+
+
+
+     
     
-</div>
+</div> 
+
 
